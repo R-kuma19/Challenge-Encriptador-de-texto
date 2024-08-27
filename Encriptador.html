@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="/Imgns/favicon.ico">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <a href="#" rel="">
+            <img class="logo" src="/Imgns/Logo.png" alt="Imagen del Logo de Alura Latam">
+        </a>
+    </header>
+
+    <main>
+        <section class="seccionIngresar">
+            <textarea placeholder="Ingrese el texto aqui" class="textoEncriptar"></textarea>
+            
+            <div class="indicacion">
+                <img src="/Imgns/alerta.png" alt="Icono de alerta" class="simboloExclamacion">
+                <p class="textoIndicacion">Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+            <div class="contenedorBotones">
+                <button button onclick="encriptar()" class="botonEncriptar">Encriptar</button>
+                <button button onclick="desencriptar()" class="botonDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="seccionSalida">
+            <div class="contenedorDibujo">
+                <img class="dibujo" src="/Imgns/Muñeco.png" alt="Dibujo de una persona usando una lupa para buscar algo">
+                <p class="textoNinguno">Ningún mensaje fue <br>encontrado</p>
+                <p class="textoGuia">Ingresa el texto que desees encriptar o<br>desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button onclick="copiarTexto()" class="botonCopiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="autor">Encriptador de texto - Desarrollado por Ximena Perez</p>
+        <a href="https://www.linkedin.com/in/ximena-perez-burgos/" rel="">
+            <img src="./Imgns/linkedin.svg" alt="Icono linkedin" class="linkedin">
+        </a>
+        <a href="https://github.com/R-kuma19"><img src="./Imgns/github.svg" alt="Icono github" class="github"></a>
+    </footer>
+    <script src="./Js/encriptador.js"></script>
+</body>
+</html>

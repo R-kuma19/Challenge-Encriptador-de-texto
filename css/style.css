@@ -1,0 +1,279 @@
+
+/*Importación de fuente desde Google Fonts (Inter)*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/*Definición de colores base a usar en todo el proyecto*/
+:root{
+    --font:#E5E5E5;
+    --white:#FFFFFF;
+    --mediumBlue:#0A3871;
+    --gray:#C5C5C5;
+    --mediumGray:#67808E;
+    --lightBlue:#D8DFE8;
+    --fondo:#F3F5FC;
+    --sombra:rgba(0,0,0,0.8);
+    --darkBlue:#0A38718A;
+    --gray5:#343A40;
+    --gray4:#495057;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+    text-decoration:none;
+    background: var(--fondo);
+}
+
+::selection{
+    background: var(--mediumBlue);
+    color: var(--white)
+}
+
+body{
+    height:100%;
+}
+
+img{
+    max-width:100%;
+}
+
+header{
+    position:absolute;
+    margin:40px 0px 0px 40px;
+}
+
+header .logo{
+    display:flex;
+    align-items:flex-start;
+    width:120px;
+    height:48px;
+}
+
+main{
+    display:flex;
+    flex-direction:row;
+    margin:0px 240px;
+}
+
+.seccionIngresar{
+    width:60%;
+    margin:168px 0px 0px 140px;
+    background:transparent;
+}
+
+.textoEncriptar{
+    font-weight:400px;
+    font-size:32px;
+    line-height:48px;
+    color:var(--darkBlue);
+    border:none;
+    resize:none;
+}
+
+.textoEncriptar::placeholder,:focus{
+    color:var(--darkBlue);
+}
+
+.indicacion{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    padding:0;
+    gap:8px;
+    position:absolute;
+    top:851px;
+}
+
+.textoIndicacion{
+    width:100%;
+    font-style:normal;
+    font-weight:400;
+    font-size:18px;
+    line-height:150%;
+    opacity:0.8;
+    color:var(--mediumGray);
+}
+
+.contenedorBotones{
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    gap:8px;
+    position:absolute;
+    top:885px;
+}
+
+.botonEncriptar{
+    width:328px;
+    height:67px;
+    padding:24px;
+    font-style:normal;
+    font-weight:400;
+    font-size:16px;
+    line-height:19px;
+    text-align:center;
+    color:var(--white);
+    background: var(--mediumBlue);
+    border:1px solid var(--mediumBlue);
+    border-radius:24px;
+    cursor:pointer;
+}
+
+.botonEncriptar:active{
+    box-shadow:inset 2px 2px 4px var(--font);
+    inset:-3px -4px 8px var(--mediumBlue);
+    color:var(--lightBlue);
+}
+
+.botonDesencriptar{
+    width:328px;
+    height:67px;
+    padding:24px;
+    font-style:normal;
+    font-weight:400;
+    font-size:16px;
+    line-height:19px;
+    text-align:center;
+    color:var(--mediumBlue);
+    background: var(--lightBlue);
+    border:1px solid var(--mediumBlue);
+    border-radius:24px;
+    cursor:pointer;
+}
+
+.botonDesencriptar:active{
+    box-shadow:inset 2px 2px 4px var(--mediumBlue);
+    inset:-3px -4px 8px var(--font);
+    color:var(--darkBlue);
+}
+
+.seccionSalida{
+    width:400px;
+    height:944px;
+    background:var(--white);
+    position:relative;
+    margin-top:40px;
+    border-radius:32px;
+    text-align:center;
+}
+
+.contenedorDibujo{
+    width:250pxs;
+    margin:auto;
+    margin-top:50%;
+    background:var(--white);
+}
+
+.dibujo{
+    background:transparent;
+}
+
+.textoNinguno{
+    font-style:normal;
+    font-weight:700;
+    font-size:18px;
+    line-height:120%;
+    text-align:center;
+    color:var(--gray5);
+    background-color:transparent;
+}
+
+.textoGuia{
+    font-style:normal;
+    font-weight:400;
+    font-size:12px;
+    line-height:150%;
+    text-align:center;
+    color:var(--gray5);
+    background:transparent;
+}
+
+.evaluar{
+    width:100%;
+    height:485px;
+    position:absolute;
+    padding:20px;
+    top:0;
+    left:0;
+    font-weight:400;
+    font-size:24px;
+    line-height:36px;
+    background:transparent;
+    border-top-right-radius:32px;
+    border-top-left-radius:32px;
+    border:none;
+    resize:none;
+}
+
+.evaluar:focus{
+    outline:none;
+}
+
+.botonCopiar{
+    width: 336px;
+    height: 67px;
+    margin: 23px;
+    position:absolute;
+    bottom:0;
+    left:2.5%;
+    visibility:hidden;
+    padding:24px;
+    font-size:16px;
+    line-height:19px;
+    text-align:center;
+    background:transparent;
+    border:1px solid var(--mediumBlue);
+    border-radius:24px;
+    cursor:pointer;
+}
+
+.botonEncriptar:hover,
+.botonDesencriptar:hover,
+.botonCopiar:hover{
+    transform:scale(0.97);
+}
+
+footer{
+    margin-top:15px;
+    padding:10px;
+    border-top:2px solid var(--font);
+    color:var(--gray5);
+    text-align: center;
+    height:5px;
+    font-size:20px;
+    font-weight:700;
+}
+
+.linkedin:hover{
+    color:var(--font);
+    opacity:0.8;
+}
+.github:hover{
+    color:var(--font);
+    opacity:0.6;
+}
+
+/* Intento de Media querys y responsividad
+@media(max-width:1250px){
+    main{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+    }
+
+    .seccionIngresar{
+        margin: 168px 0px 0px 0px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+    }
+}
+
+@media(max-width:720px){
+
+}
+*/
